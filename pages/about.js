@@ -1,17 +1,10 @@
 import Link from "next/link";
+import { DefaultLayout } from "../components/layouts";
 
-export default function Index() {
+export default function About() {
   return (
-    <div>
-      <h1>Perlux</h1>
-      <p>An analog photography blog</p>
-      <Link href="/">
-        <a> Home </a>
-      </Link>
-      <Link href="/about">
-        <a> About </a>
-      </Link>
+    <DefaultLayout>
       <h2>About</h2>
-    </div>
+    </DefaultLayout>
   );
 }
